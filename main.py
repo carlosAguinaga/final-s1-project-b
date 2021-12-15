@@ -3,7 +3,7 @@ from package_module import reader
 
 def get_top_ten():
     try:
-        words = reader.get_words('historia.txt')
+        words = reader.get_words('el_principito.txt')
         top10 = collections.Counter(words).most_common(10)
     except Exception as e:
         return e
